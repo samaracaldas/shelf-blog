@@ -55,6 +55,7 @@ export const useAuthentication = () => {
             console.log(typeof error.message)
 
             let systemErrorMessage;
+            console.log(error)
 
             if(error.message.includes("Password")) {
                 systemErrorMessage = "A senha precisa conter pelo menos 6 caracteres."
@@ -77,6 +78,38 @@ export const useAuthentication = () => {
 
 
         signOut(auth)
+    };
+
+    // login
+    const login = async(data) => {
+
+        checkIfIsCancelled()
+
+        setLoading(true)
+        setError(false)
+
+        try {
+            
+            await signInWithEmailAndPassword(auth, data.email, data.password)
+            setLoading(false);
+
+        } catch (error) {
+            
+            let systemErrorMessage;
+            console.log(error)
+
+
+            if (error.message.includes("invalid-credential")) {
+                systemErrorMessage = "Usuário não encontrado."
+            } else if (error.message.includes("wrong-password")) {
+                systemErrorMessage = "Senha incorreta."
+            } else {
+                systemErrorMessage = "Ocorreu um erro, por favor tente mais tarde."
+            }
+
+            setError(systemErrorMessage);
+            setLoading(false)
+        }
     }
 
     useEffect(() => {
@@ -89,5 +122,6 @@ export const useAuthentication = () => {
         error,
         loading,
         logout,
+        login,
     };
 };
