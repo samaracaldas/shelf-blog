@@ -3,7 +3,8 @@ import styles from "./CreatePost.module.css";
 import { useState } from "react";
 import { useInsertDocument } from "../../hooks/useInsertDocuments";
 import { useNavigate } from "react-router-dom";
-import { useAuthValue } from "../../context/AuthContext";
+import { useAuthValue } from "../../context/useAuthContext";
+
 const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");

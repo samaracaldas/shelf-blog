@@ -36,7 +36,7 @@ const Home = () => {
       </form>
 
       <div>
-        {loading && <p>Carregando...</p>}
+        {loading && <p className="loading">Carregando...</p>}
 
         {posts && posts.map((post) => (
           <PostDetail post={post} />

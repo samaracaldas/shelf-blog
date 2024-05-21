@@ -1,8 +1,15 @@
 body {
-  background-color: #f6fcff;
+  background-color: var(--primary-color);
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primary-color: #F8EDEB;
+  --secondary-color: #F9DCC4;
+  --main-color: #FF7B00;
+  --button-color: #FFB5A7;
 }
 
 input::placeholder,
@@ -62,7 +69,7 @@ textarea {
 }
 
 .btn {
-  background-color: #1a8918;
+  background-color: #F27059;
   color: #fff;
   text-align: center;
   cursor: pointer;
@@ -75,25 +82,25 @@ textarea {
 }
 
 .btn.btn-dark {
-  background-color: #000;
+  background-color: var(--main-color);
   border-radius: 0;
 }
 
 .btn.btn-outline {
   background-color: transparent;
   border-radius: 0;
-  color: #000;
-  border: 1px solid #000;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
   padding: 7px 30px;
 }
 
 .btn:hover {
-  background-color: #0F730c;
+  background-color: #F4845F;
   color: #fff;
 }
 
 .btn.btn-outline:hover {
-  background-color: #000;
+  background-color: var(--main-color);
 }
 
 .btn.btn-danger:hover {

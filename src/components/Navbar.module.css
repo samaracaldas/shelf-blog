@@ -15,6 +15,7 @@
 .brand span {
     font-weight: 900;
     text-transform: uppercase;
+    color: var(--main-color);
 }
 
 .links_list {
@@ -32,6 +33,6 @@
 
 
 .active {
-    background-color: #000;
+    background-color: var(--main-color);
     color: #fff;
 }

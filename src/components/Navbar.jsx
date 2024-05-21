@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import { useAuthentication } from "../hooks/useAuthentication";
 
-import { useAuthValue } from "../context/AuthContext";
+import { useAuthValue } from "../context/useAuthContext";
 
 import styles from "./Navbar.module.css";
 
@@ -48,7 +48,7 @@ const Navbar = () => {
                </li>
                <li>
                    <NavLink to="/dashboard" className={({isActive}) => (isActive ? styles.active : "")} >
-                       Cadastrar
+                       Dashboard
                    </NavLink>
                </li>
            </>

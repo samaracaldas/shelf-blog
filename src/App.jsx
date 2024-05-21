@@ -2,13 +2,14 @@ import './App.css';
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
+import { ClipLoader } from 'react-spinners';
 
 // hooks
 import { useState, useEffect } from 'react';
 import { useAuthentication } from './hooks/useAuthentication';
 
 // context
-import { AuthProvider } from './context/AuthContext';
+import { AuthProvider } from './context/useAuthContext';
 
 // pages
 import Home from './pages/Home/Home';
@@ -38,7 +39,7 @@ function App() {
   }, [auth])
 
   if (loadingUser) {
-    return <p>Carregando...</p>
+    return  <div className='loading'><ClipLoader color="#FF7B00" loading={true} size={150} /></div>
 
   }
 
