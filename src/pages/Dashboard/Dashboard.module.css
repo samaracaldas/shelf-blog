@@ -112,6 +112,7 @@
 
     .post_row p {
         font-size: 0.9em;
+        margin-right: 3rem;
     }
 
     .post_row button, .post_row a {
