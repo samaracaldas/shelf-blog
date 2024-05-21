@@ -3,7 +3,7 @@
 }
 
 .post_detail img {
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .post_detail h2 {
@@ -30,3 +30,33 @@
     font-size: 0.8em;
     margin-bottom: 1em;
 }
+
+@media only screen and (max-width: 768px) {
+    .post_detail img {
+      max-width: 100%;
+    }
+  
+    .tags p {
+      margin-right: .3em;
+      font-size: 0.9em;
+    }
+  
+    .createdBy {
+      font-size: 0.8em;
+    }
+  }
+  
+  /* Media Query para telas muito pequenas */
+  @media only screen and (max-width: 480px) {
+    .post_detail h2 {
+      font-size: 1.5em;
+    }
+  
+    .tags p {
+      font-size: 0.8em;
+    }
+  
+    .createdBy {
+      font-size: 0.7em;
+    }
+  }

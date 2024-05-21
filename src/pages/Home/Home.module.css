@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 4rem;
+    margin-top: 1rem;
 }
 
 .search_form {
@@ -28,5 +30,26 @@
 
 .noposts a {
     padding: 10px 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .search_form {
+        width: 80%; 
+    }
+
+    .search_form input {
+        width: 100%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .search_form {
+        width: 90%; 
+    }
+
+    .search_form input {
+        width: 80%;
+    }
 }
 

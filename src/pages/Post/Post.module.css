@@ -49,3 +49,50 @@
   font-size: 0.8em;
   margin-bottom: 1em;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .post_container {
+    margin: 2rem;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    max-width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .text_container {
+    width: 90%;
+  }
+}
+
+/* Media Query para telas muito pequenas */
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+
+  .image {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .text_container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .tag {
+    font-size: 0.9em;
+  }
+
+  .createdBy {
+    font-size: 0.7em;
+  }
+}

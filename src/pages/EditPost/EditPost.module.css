@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+.edit_post img {
+    max-width: 300px;
+    margin-bottom: 2rem;
+}
+
 .edit_post h2 {
     font-size: 2.2em;
 }
@@ -9,4 +14,16 @@
 .edit_post p {
     color: #aaa;
     margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .edit_post {
+        margin: 2rem;
+    }
+
+    .edit_post img {
+        width: 100%;
+    }
+
 }

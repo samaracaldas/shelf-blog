@@ -57,3 +57,56 @@
     width: 100px;
     font-size: 0.7em;
   }
+
+  @media only screen and (max-width: 768px) {
+    .post_header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      border-bottom: 2px solid #ccc;
+      width: 80%;
+      padding: 10px;
+    }
+
+    .post_row p {
+      font-size: 0.8em;
+      margin-right: 5px;
+  }
+    
+    .post_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      width: 80%;
+      padding: 15px;
+    }
+    
+
+    .post_row button, .post_row a {
+        width: 10 0%;
+        margin: 5px 0;
+    }
+
+  
+}
+
+@media only screen and (max-width: 480px) {
+    .dashboard h2 {
+        font-size: 1.8em;
+    }
+
+    .noposts a {
+        padding: 8px 20px;
+        font-size: 0.9em;
+    }
+
+    .post_row p {
+        font-size: 0.9em;
+    }
+
+    .post_row button, .post_row a {
+        width: 100%;
+        font-size: 0.6em;
+    }
+}
