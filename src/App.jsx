@@ -22,6 +22,7 @@ import CreatePost from './pages/CreatePost/CreatePost';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Search from './pages/Search/Search';
 import Post from './pages/Post/Post';
+import EditPost from './pages/EditPost/EditPost';
 
 function App() {
 
@@ -40,7 +41,6 @@ function App() {
 
   if (loadingUser) {
     return  <div className='loading'><ClipLoader color="#FF7B00" loading={true} size={150} /></div>
-
   }
 
   return (
@@ -61,6 +61,10 @@ function App() {
                   <Route 
                     path='/register' 
                     element={!user ?<Register /> : <Navigate to="/" />}
+                  />
+                  <Route
+                    path='/posts/edit/:id'
+                    element={user ? <EditPost /> : <Navigate to="/login" />}
                   />
                   <Route
                     path='/posts/create'
