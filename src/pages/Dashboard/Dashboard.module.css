@@ -85,7 +85,7 @@
 
     .post_row button, .post_row a {
         width: 10 0%;
-        margin: 5px 0;
+        margin: 12px 3px;
     }
 
   
@@ -103,7 +103,6 @@
 
     .post_row p {
         font-size: 0.9em;
-        margin-right: 2rem;
     }
 
     .post_row button, .post_row a {
