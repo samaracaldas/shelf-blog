@@ -1,62 +1,89 @@
 .post_detail {
-    margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  max-width: 500px;
+  margin-bottom: 2em;
+  padding: 1em;
 }
 
 .post_detail img {
-    max-width: 500px;
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+.post_detail h2, .post_detail .createdBy, .post_detail .tags, .post_detail a {
+  align-self: flex-start; /* Alinha os elementos à esquerda */
 }
 
 .post_detail h2 {
-    margin-bottom: .4em;
+  margin-bottom: .4em;
 }
 
 .post_detail .tags {
-    margin-bottom: 1.2em;
-    display: flex;
+  margin-bottom: 1.2em;
+  display: flex;
 }
 
 .tags p {
-    margin-right: .5em;
-    color: #dc2f02;
+  margin-right: .5em;
+  color: #dc2f02;
 }
 
 .tags span {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .createdBy {
-    font-style: italic;
-    color: #444;
-    font-size: 0.8em;
-    margin-bottom: 1em;
+  font-style: italic;
+  color: #444;
+  font-size: 0.8em;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 768px) {
-    .post_detail img {
-      max-width: 100%;
-    }
+  .post_detail {
+      margin: 2em 1em; /* Margem específica para telas menores */
+      max-width: 500px;
+  }
   
-    .tags p {
+  .post_detail img {
+      max-width: 355px;
+  }
+  
+
+  .tags p {
+      width: 100px;
       margin-right: .3em;
-      font-size: 0.9em;
-    }
-  
-    .createdBy {
       font-size: 0.8em;
-    }
   }
+
+  .createdBy {
+      font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .post_detail {
+      margin: 2em 0.5em; /* Margem específica para telas muito pequenas */
+  }
+
+  .post_detail img {
+    max-width: 355px;
+}
   
-  /* Media Query para telas muito pequenas */
-  @media only screen and (max-width: 480px) {
-    .post_detail h2 {
+  .post_detail h2 {
       font-size: 1.5em;
-    }
-  
-    .tags p {
-      font-size: 0.8em;
-    }
-  
-    .createdBy {
-      font-size: 0.7em;
-    }
   }
+  .tags {
+    width: 355px;
+  }
+
+  .tags p {
+      font-size: 0.8em;
+  }
+
+  .createdBy {
+      font-size: 0.7em;
+  }
+}
