@@ -1,5 +1,5 @@
 # shelfblog
-![Macbook-Air-shelf-blog vercel app (2)](https://github.com/samaracaldas/shelf-blog/assets/92318337/7dfb1aea-138d-493c-ae70-8937c6499173)
+![Macbook-Air-shelf-blog vercel app](https://github.com/samaracaldas/shelf-blog/assets/92318337/d58ab418-0393-4a09-8dbc-872f8d962fab)
 <h2>:page_with_curl: Description</h2>
 <p id="description">Um blog para falar sobre seus livros favoritos ou leituras atuais.</p>
 
