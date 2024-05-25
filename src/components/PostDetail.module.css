@@ -13,7 +13,7 @@
 }
 
 .post_detail h2, .post_detail .createdBy, .post_detail .tags, .post_detail a {
-  align-self: flex-start; /* Alinha os elementos à esquerda */
+  align-self: flex-start; 
 }
 
 .post_detail h2 {
@@ -43,7 +43,7 @@
 
 @media only screen and (max-width: 768px) {
   .post_detail {
-      margin: 2em 1em; /* Margem específica para telas menores */
+      margin: 0em 1em; 
       max-width: 500px;
   }
   
@@ -65,7 +65,7 @@
 
 @media only screen and (max-width: 480px) {
   .post_detail {
-      margin: 2em 0.5em; /* Margem específica para telas muito pequenas */
+      margin: 0em 0.5em; 
   }
 
   .post_detail img {
