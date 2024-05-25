@@ -75,7 +75,10 @@
   .post_detail h2 {
       font-size: 1.5em;
   }
- 
+  .tags {
+    width: 355px;
+  }
+
   .tags p {
       font-size: 0.8em;
   }
