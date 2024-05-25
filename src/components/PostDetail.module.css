@@ -48,7 +48,7 @@
   }
   
   .post_detail img {
-      max-width: 355px;
+      max-width: 367px;
   }
   
 
@@ -69,16 +69,13 @@
   }
 
   .post_detail img {
-    max-width: 355px;
+    max-width: 367px;
 }
   
   .post_detail h2 {
       font-size: 1.5em;
   }
-  .tags {
-    width: 355px;
-  }
-
+ 
   .tags p {
       font-size: 0.8em;
   }
